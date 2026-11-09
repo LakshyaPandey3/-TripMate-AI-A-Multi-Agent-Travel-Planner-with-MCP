@@ -2,6 +2,8 @@
 # ✈️ TripMate AI
 ### A Multi-Agent AI Travel Planner powered by LangGraph
 
+🚀 **Live Deployment:** [Try TripMate AI](https://tripmate-ai-a-multi-agent-travel-planner-rs5s.onrender.com/)g
+
 TripMate AI is an AI-powered travel planning application that transforms natural-language travel requests into structured trip plans using a multi-agent workflow.
 
 
