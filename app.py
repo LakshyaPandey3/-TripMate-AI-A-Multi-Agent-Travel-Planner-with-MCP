@@ -14,11 +14,12 @@ from backend import run_travel_agent
 import nest_asyncio
 nest_asyncio.apply()
 
+
 BASE_DIR = Path(__file__).resolve().parent
 
 app = FastAPI(
     title="TripMate AI",
-    description="LangGraph Multi-Agent Travel Planner with FastAPI Frontend",
+    description="LangGraph Multi-Agent Travel Planner with MCP Integrations and FastAPI Frontend",
     version="1.0.0"
 )
 
@@ -77,6 +78,7 @@ async def travel_planner(request_data: TravelRequest):
                 "answer": result["answer"],
                 "flight_results": result["flight_results"],
                 "hotel_results": result["hotel_results"],
+                "weather_results": result["weather_results"],
                 "itinerary": result["itinerary"],
                 "llm_calls": result["llm_calls"],
             }
